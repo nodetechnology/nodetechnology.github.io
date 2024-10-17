@@ -15,8 +15,6 @@
 				nav: true,
 				controls: true,
 				autoplay: true,
-				autoplayHoverPause: true,
-				autoplayTimeout: 3500,
 				autoplayButtonOutput: false
 			});
 		}
