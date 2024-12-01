@@ -93,11 +93,11 @@
 							</div>
 							<form id="form">
 								<div class="form-group">
-								  <label class="text-black"  for="name">İsim</label>
+								  <label class="text-black"  for="name">Ad Soyad</label>
 								  <input class="form-control"  type="text" name="name" id="name" required>
 								</div>
 								<div class="form-group">
-								  <label class="text-black"  for="email">Email</label>
+								  <label class="text-black"  for="email">E-mail</label>
 								  <input class="form-control"  type="text" name="email" id="email" required>
 								</div>
 								<div class="form-group mb-5">
@@ -184,11 +184,11 @@
 		emailjs.sendForm(serviceID, templateID, this)
 			.then(() => {
 			btn.value = 'Gönder';
-			alert('Gönderildi!');
+			alert('Teşekkürler! Mesajızın iletildi en kısa sürede girdğiniz mail adresi üzerinden sizinle iletişime geçilecektir.');
 			document.getElementById('form').reset();
 			}, (err) => {
 			btn.value = 'Gönder';
-			alert(JSON.stringify(err));
+			alert(JSON.stringify('Mesajınız iletilemedi lütfen tekrar deneyiniz. Sorununuz devam ederse bizimle info@nodemobilya.com mail adresi üzerinden iletişime geçebilirsiniz'));
 			});
 		});
 		</script>
