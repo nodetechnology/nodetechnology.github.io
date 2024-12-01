@@ -91,25 +91,29 @@
 									</div> <!-- /.service -->
 								</div>
 							</div>
-							<form id="contact-form">
-								<div class="row">
-									<div class="form-group">
-									<label class="text-black" for="name">İsim</label>
-									<input type="text" class="form-control" id="name">
-									</div>
+							<form id="form">
+								<div class="form-group">
+								  <label class="text-black"  for="name">İsim</label>
+								  <input class="form-control"  type="text" name="name" id="name" required>
 								</div>
 								<div class="form-group">
-								<label class="text-black" for="email">Email</label>
-								<input type="email" class="form-control" id="email">
+								  <label class="text-black"  for="email">Email</label>
+								  <input class="form-control"  type="text" name="email" id="email" required>
 								</div>
-				
 								<div class="form-group mb-5">
-								<label class="text-black" for="message">Mesaj</label>
-								<textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
+								  <label class="text-black"  for="message">Mesaj</label>
+								  <textarea class="form-control"  name="message" id="message" cols="30" rows="5" required></textarea>
 								</div>
-				
-								<button type="submit" class="btn btn-primary-hover-outline">Gönder</button>
-							</form>
+							  
+								<input class="btn btn-primary-hover-outline"  type="submit" id="button" value="Gönder" >
+							  </form>
+							  
+							  <script type="text/javascript"
+								src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+							  
+							  <script type="text/javascript">
+								emailjs.init('dTkKtcwlJv20hegMV')
+							  </script>
 							<div id="response"></div>
 						</div>
 					</div>
@@ -160,38 +164,35 @@
 		</footer>
 		<!-- End Footer Section -->
 
-		<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+		
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>
+
 		<script>
-			// EmailJS'i başlatmak
-			(function() {
-				emailjs.init("service_bpphhyb");  // 'YOUR_USER_ID' ile kendi kullanıcı ID'nizi girin
-			})();
+		const btn = document.getElementById('button');
 
-			// Formu gönderme işlemi
-			document.getElementById('contact-form').addEventListener('submit', function(event) {
-				event.preventDefault(); // Formun sayfayı yenilemesini engelle
+		document.getElementById('form')
+		.addEventListener('submit', function(event) {
+		event.preventDefault();
 
-				// Form verilerini alın
-				const formData = new FormData(event.target);
-				const formObject = {};
-				formData.forEach((value, key) => {
-					formObject[key] = value;
-				});
+		btn.value = 'Gönderiliyor...';
 
-				// EmailJS API'si ile e-posta gönderme
-				emailjs.sendForm('service_bpphhyb', 'template_virbigb', this)
-					.then(function(response) {
-						document.getElementById('response').textContent = 'Mesaj başarıyla gönderildi!';
-						console.log('Success:', response);
-					}, function(error) {
-						document.getElementById('response').textContent = 'Mesaj gönderilemedi, lütfen tekrar deneyin.';
-						console.log('Error:', error);
-					});
+		const serviceID = 'default_service';
+		const templateID = 'template_virbigb';
+
+		emailjs.sendForm(serviceID, templateID, this)
+			.then(() => {
+			btn.value = 'Gönder';
+			alert('Gönderildi!');
+			document.getElementById('form').reset();
+			}, (err) => {
+			btn.value = 'Gönder';
+			alert(JSON.stringify(err));
 			});
+		});
 		</script>
+		
 	</body>
 
 </html>
