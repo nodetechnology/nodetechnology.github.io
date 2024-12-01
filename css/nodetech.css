@@ -163,7 +163,7 @@
     }
 
   }
-  @media (width < 420px)  {
+  @media (width < 500px)  {
     .content {
       & .title        { font-size: 0.9rem; }
       & .description  { font-size: 0.65rem; }
