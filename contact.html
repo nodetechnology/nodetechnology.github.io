@@ -91,12 +91,12 @@
 									</div> <!-- /.service -->
 								</div>
 							</div>
-							<form action="https://formspree.io/f/myzylgyg" method="POST">
+							<form id="contact-form">
 								<div class="row">
 								<div class="col-6">
 									<div class="form-group">
-									<label class="text-black" for="fname">İsim</label>
-									<input type="text" class="form-control" id="fname">
+									<label class="text-black" for="name">İsim</label>
+									<input type="text" class="form-control" id="name">
 									</div>
 								</div>
 								<div class="col-6">
@@ -118,6 +118,7 @@
 				
 								<button type="submit" class="btn btn-primary-hover-outline">Gönder</button>
 							</form>
+							<div id="response"></div>
 						</div>
 					</div>
 				</div>
@@ -165,12 +166,40 @@
 
 			</div>
 		</footer>
-		<!-- End Footer Section -->	
+		<!-- End Footer Section -->
 
-
+		<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>
+		<script>
+			// EmailJS'i başlatmak
+			(function() {
+				emailjs.init("service_bpphhyb");  // 'YOUR_USER_ID' ile kendi kullanıcı ID'nizi girin
+			})();
+
+			// Formu gönderme işlemi
+			document.getElementById('contact-form').addEventListener('submit', function(event) {
+				event.preventDefault(); // Formun sayfayı yenilemesini engelle
+
+				// Form verilerini alın
+				const formData = new FormData(event.target);
+				const formObject = {};
+				formData.forEach((value, key) => {
+					formObject[key] = value;
+				});
+
+				// EmailJS API'si ile e-posta gönderme
+				emailjs.sendForm('service_bpphhyb', 'template_virbigb', this)
+					.then(function(response) {
+						document.getElementById('response').textContent = 'Mesaj başarıyla gönderildi!';
+						console.log('Success:', response);
+					}, function(error) {
+						document.getElementById('response').textContent = 'Mesaj gönderilemedi, lütfen tekrar deneyin.';
+						console.log('Error:', error);
+					});
+			});
+		</script>
 	</body>
 
 </html>
