@@ -138,7 +138,7 @@
       &:nth-child(6) { left: calc(50% + 510px); opacity: 0; }
     }
     body{
-      height: 1300px;
+      height: 600px;
     }
   }
   
@@ -179,7 +179,7 @@
       &:nth-child(6) { left: calc(50% + 420px); opacity: 0; }
     }
     body{
-      height: 900px;
+      height: 600px;
       width: 100%;
     }
   }
