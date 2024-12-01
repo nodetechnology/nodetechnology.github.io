@@ -22,7 +22,7 @@
     width: 200px;
     height: 300px;
     list-style-type: none;
-    position: absolute;
+    position: fixed;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
@@ -179,7 +179,7 @@
       &:nth-child(6) { left: calc(50% + 420px); opacity: 0; }
     }
     body{
-      height: 2300px;
+      height: 900px;
       width: 100%;
     }
   }
