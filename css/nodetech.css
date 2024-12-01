@@ -122,24 +122,27 @@
     }
   }
   
-  @media (width > 650px) and (width < 900px) {
+  @media (width > 800px) and (width < 900px) {
     .content {
       & .title        { font-size: 1rem; }
       & .description  { font-size: 0.7rem; }
       & button        { font-size: 0.7rem; }
     }
     .item {
-      width: 160px;
-      height: 270px;
+      width: 260px;
+      height: 500px;
   
       &:nth-child(3) { left: 50%; }
       &:nth-child(4) { left: calc(50% + 170px); }
       &:nth-child(5) { left: calc(50% + 340px); }
       &:nth-child(6) { left: calc(50% + 510px); opacity: 0; }
     }
+    body{
+      height: 3500px;
+    }
   }
   
-  @media (width < 650px) {
+  @media (width < 700px) {
     .content {
       & .title        { font-size: 0.9rem; }
       & .description  { font-size: 0.65rem; }
@@ -153,5 +156,9 @@
       &:nth-child(4) { left: calc(50% + 140px); }
       &:nth-child(5) { left: calc(50% + 280px); }
       &:nth-child(6) { left: calc(50% + 420px); opacity: 0; }
+    }
+    body{
+      height: 4000px;
+      width: 100%;
     }
   }
