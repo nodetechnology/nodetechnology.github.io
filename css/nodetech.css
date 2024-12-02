@@ -136,6 +136,7 @@ button {
   text-shadow: 0 0 .5em var(--glow-color);
   position: relative;
   transition: all 0.3s;
+  margin-top: 50px;
  }
  
  
@@ -143,7 +144,7 @@ button {
   pointer-events: none;
   content: "";
   position: absolute;
-  top: 120%;
+  top: 130%;
   left: 0;
   height: 100%;
   width: 100%;
