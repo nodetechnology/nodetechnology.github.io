@@ -125,12 +125,13 @@ const translations = {
         "projects-p2": "Dowaksa-Linde Road Lighting",
         "projects-p3": "Dowaksa Carbon Fiber Factory Capacity Expansion Project",
         "projects-p4": "ÇOSB Environmental Lighting and Camera Infrastructure",
-        "projects-p5": "Airjet Acrylic Yarn Factory and Raw Material Warehouse",
+        "projects-p5": "Aksafil Acrylic Yarn Factory and Product Warehouse",
         "projects-p6": "Akcennet Recreation Area Lighting",
         "projects-p7": "Arçelik Washing Machine Factory",
         "projects-p8": "Aksa Truck Parking Area",
         "projects-p9": "Akbatı Shopping Mall Solar Power Plant",
         "projects-p10": "Akasya Shopping Mall Solar Power Plant",
+        "projects-p11": "Mithra Technical Yarn Factory",
         "projects-t": "Contracting",
         "projects-y": "Renewable Energy",
         "projects-photos-h": "Photos",
@@ -200,7 +201,7 @@ const translations = {
         "projects-cosb-card-p3": "2021",
         "projects-cosb-card-p4": "Tekirdağ, Kapaklı",
         //projects-aksafil
-        "projects-aksafil-header": "Airjet Acrylic Yarn Factory and Raw Material Warehouse",
+        "projects-aksafil-header": "Aksafil Acrylic Yarn Factory and Product Warehouse",
         "projects-aksafil-p": "The electrical installation work of the 'Airjet Acrylic Yarn Factory and Raw Material Warehouse,' owned by Aksa Akrilik Kimya Sanayi A.Ş., a subsidiary of Akkök Holding, located in the Çiftlikköy district of Yalova, with a construction area of 28,716 m² and an installed power of 8 MW, was completed and delivered in 2023.",
         "projects-aksafil-li-1": "Lighting System",
         "projects-aksafil-li-2": "Low Voltage Distribution System",
@@ -409,9 +410,57 @@ const translations = {
     "successMessage": "Thank you! Your message has been delivered. We will contact you as soon as possible via the email address you provided.",
     "errorMessage": "Your message could not be delivered. Please try again. If the issue persists, you can contact us via email at info@magmagrup.com.tr.",
 
+//*mithra project
+
+    "projects-mithra-p": "The electrical installation work of the 'Mithra Technical Yarn Factory' with a construction area of 35,000 m² and an installed capacity of 10 MW, owned by Aksa Akrilik Kimya Sanayi A.Ş., a subsidiary of Akkök Holding located in the Çiftlikköy district of Yalova, is planned to be completed and handed over by the end of 2024",
+    "projects-mithra-card-p1": "Elektrik Contracting",
+    "projects-mithra-card-p2": "Aksa – Mithra Technical Yarn Factory",
+    "projects-mithra-card-p3": "2024",
+    "projects-mithra-card-p4": "Yalova, Çiftlikköy",
+
+    "projects-mithra-li-1": "Public Address & Voice Evacuation Sys.",
+    "projects-mithra-li-2": "Low Voltage Distribution System",
+    "projects-mithra-li-3": "Lighting System",
+    "projects-mithra-li-4": "Busbar Distribution System",
+    "projects-mithra-li-5": "CCTV System",
+    "projects-mithra-li-6": "Perimeter Lighting & Elect. Infrastructure",
+    "projects-mithra-li-7": "Distribution, MCC & Comp. Panels",
+    "projects-mithra-li-8": "Data/Network System",
+    "projects-mithra-li-9": "Construction Site Mobilization",
+    "projects-mithra-li-10": "Medium Voltage System",
+    "projects-mithra-li-11": "Transformer Station",
+    "projects-mithra-li-12": "UPS System",
+    "projects-mithra-li-13": "Lighting Protection & Grounding",
+    "projects-mithra-li-14": "Fire Detection & Alarm System",
+
 
     },
     "tr": {
+
+//*mithra project
+        "projects-mithra-card-p1": "Elektrik Taahhüt",
+        "projects-mithra-card-p2": "Aksa – Mithra Teknik İplik Fabrikası",
+        "projects-mithra-card-p3": "2024",
+        "projects-mithra-card-p4": "Yalova, Çiftlikköy",
+
+        "projects-mithra-li-1": "Acil Anons ve Seslendirme Sistemi",
+        "projects-mithra-li-2": "Alçak Gerilim Dağıtım Sistemi",
+        "projects-mithra-li-3": "Aydınlatma Sistemi",
+        "projects-mithra-li-4": "Busbar Dağıtım Sistemi",
+        "projects-mithra-li-5": "CCTV Sistemi",
+        "projects-mithra-li-6": "Çevre Aydınlatma ve Elek. Altyapısı",
+        "projects-mithra-li-7": "Dağıtım,MCC ve Komp. Panoları",
+        "projects-mithra-li-8": "Data/Network Sistemi",
+        "projects-mithra-li-9": "İnşaat Sahası Mobilizasyon",
+        "projects-mithra-li-10": "Orta Gerilim Sistemi",
+        "projects-mithra-li-11": "Trafo Merkezi",
+        "projects-mithra-li-12": "UPS Sistemi",
+        "projects-mithra-li-13": "Yıldırımdan Koruma ve Topraklama",
+        "projects-mithra-li-14": "Yangın Algılama ve İhbar Sistemi",
+
+
+
+        "projects-mithra-p": "Yalova’nın Çiftlikköy ilçesinde, Akkök Holding bünyesinde faaliyet gösteren Aksa Akrilik Kimya Sanayi A.Ş.’ye ait 35.000 m² inşaat alanına ve 10 MW kurulu güce sahip “Mithra Teknik İplik Fabrikası”nın elektrik tesisatı işinin 2024 yılı sonunda tamamlanması için çalışmalar devam etmektedir.",
 
         "successMessage": "Teşekkürler! Mesajınız iletildi, en kısa sürede girdiğiniz mail adresi üzerinden sizinle iletişime geçilecektir.",
         "errorMessage": "Mesajınız iletilemedi lütfen tekrar deneyiniz. Sorununuz devam ederse bizimle info@magmagrup.com.tr mail adresi üzerinden iletişime geçebilirsiniz",
@@ -618,12 +667,13 @@ const translations = {
         "projects-p2": "Dowaksa-Linde Yol Aydınlatması",
         "projects-p3": "Dowaksa Karbon Elyaf Fabrikası Kapasite Artırım Projesi",
         "projects-p4": "ÇOSB Çevre Aydınlatma ve Kamera Altyapısı",
-        "projects-p5": "Airjet Akrilik İplik Fabrikası değişecek",
+        "projects-p5": "Aksafil Akrilik İplik Fabrikası ve Mamul Ambarı",
         "projects-p6": "Akcennet Rekreasyon Alanı Aydınlatması",
         "projects-p7": "Arçelik Çamaşır Makinesi Fabrikası",
         "projects-p8": "Aksa Tır Parkı",
         "projects-p9": "Akbatı AVM Ges",
         "projects-p10": "Akasya AVM Ges Projesi",
+        "projects-p11": "Mithra Teknik İplik Fabrikrası",
         "projects-t": "Taahhüt",
         "projects-y": "Yenilenebilir Enerji",
         "projects-photos-h": "Fotoğraflar",
@@ -689,7 +739,7 @@ const translations = {
         "projects-cosb-card-p3": "2021",
         "projects-cosb-card-p4": "Tekirdağ, Kapaklı",
         //projects-aksafil
-        "projects-aksafil-header": "Airjet Akrilik İplik Fabrikası ve Hammade Ambar Deposu",
+        "projects-aksafil-header": "Aksafil Akrilik İplik Fabrikası ve Mamul Ambarı",
         "projects-aksafil-p": "Yalova’nın Çiftlikköy ilçesinde yer alan Akkök Holding bünyesinde bulunan Aksa Akrilik Kimya Sanayi A.Ş.’ye ait 28.716 m² inşaat alanı olan, 8 MW kurulu güce sahip “Airjet Akrilik İplik Fabrikası ve Hammadde Ambar Deposu” elektrik tesisatı işi 2023 yılında tamamlanarak teslim edilmiştir.",
         "projects-aksafil-li-1": "Aydınlatma Sistemi",
         "projects-aksafil-li-2": "Alçak Gerilim Dağıtım Sistemi",

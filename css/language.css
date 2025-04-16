@@ -26,7 +26,7 @@ input[type="checkbox"] {
   left: 5px;
   border-radius: 50%;
   transition: 0.4s ease left, 0.4s ease background-color;
-  background-image: url(https://i.hizliresim.com/ltsw1d9.jpg);
+
   background-size: cover;
   background-position: center;;
 }
@@ -50,7 +50,7 @@ input[type="checkbox"] {
 #language-toggle:checked + #button #knob {
   left: 75px;
   background-color: #ffffff;
-  background-image: url(https://m.media-amazon.com/images/I/61dHFpZmRSL._AC_UF1000,1000_QL80_.jpg);
+
 }
 
 #language-toggle:checked + #button #language-text {

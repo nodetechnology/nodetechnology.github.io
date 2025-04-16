@@ -9,11 +9,13 @@
   .slider {
     background: white;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-    height: 100px;
+    height: 150px;
     overflow: hidden;
     position: relative;
     width: 100%;
     margin-bottom: 100px;
+
+
   }
   .slider::before, .slider::after {
     background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
@@ -22,7 +24,16 @@
     position: absolute;
     width: 200px;
     z-index: 2;
+
+
+    
+
   }
+
+  .centered-img {
+margin-top: 20px;
+  }
+
   .slider::after {
     right: 0;
     top: 0;
