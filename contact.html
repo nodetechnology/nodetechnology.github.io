@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Magma</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+
+        <link rel="stylesheet" href="css/language.css"/>
+
+        <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+        
+
+    </head>
+    
+    <body>
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+    
+        <main>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                        <div class="col-lg-4">
+                            <a href="index.html">
+                                <img class="img-fluid" src="images/magma.png" width="240" height="120"  alt="logo">
+                            </a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse col-lg-8" id="navbarNav">
+                            <ul class="navbar-nav mt-lg-4"> 
+
+                                <li class="nav-item">
+                                    <a data-key="navHome" class="nav-link" href="index.html"></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a data-key="navAbout" class="nav-link" href="about.html"></a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a data-key="navServices" class="nav-link" href="services.html"></a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a data-key="navProjects" class="nav-link" href="projects.html"></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a data-key="navContact" class="nav-link active" href="contact.html"></a>
+                                </li>
+
+                                <li class="nav-item ms-lg-5 ">
+                                    <input type="checkbox" id="language-toggle">
+                                    <label id="button" for="language-toggle">
+                                        <div id="knob"></div>
+                                        <div id="language-text"></div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <header class="site-header section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 header-info">
+                            <h1>
+                                <span class="d-block text-primary" data-key="iletişime"></span>
+                            </h>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <button class="ac-buton" onclick="togglePanel(event)"><a data-key="buton"></a></button>
+            <div class="hakkimizda-panel" id="hakkimizdaPanel" onclick="event.stopPropagation()">
+                <button class="kapat-btn" onclick="togglePanel(event)">X</button>
+                    <img src="images/magmagrup.png" alt="Firma Logosu" class="logo">
+                    <div class="icerik">
+                        <h4><a data-key="buton1"></a></h4>Magma Grup İç ve Dış Ticaret Limited Şirketi
+                        
+                        <h4><a data-key="buton2"></a></h4>Kartal V.D.
+                        
+                        <h4><a data-key="buton3"></a></h4>610 110 7114
+                        
+                        <h4><a data-key="buton4"></a></h4>213429-5
+
+                        <h4><a data-key="buton5"></a></h4>0610-1107-1140-0001<br><br>
+
+                        <h3><a data-key="buton6"></a></h3> Topselvi Mahallesi, Topselvi Caddesi, Dap Teras Kule 2, No:95/97, Kartal, İstanbul
+
+                        <h3><a data-key="buton7"></a></h3>Sanayi Mahallesi, Kumru Sokak, Yavuz İş Merkezi No:8/2, İzmit, Kocaeli
+
+                        <h3><a data-key="buton8"></a></h3>+90 (216) 345 222 04 54
+
+                        <h3><a data-key="buton9"></a></h3>info@magmagrup.com.tr
+                    </div>
+            </div>
+            <section class="contact section-padding">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-6 col-12">
+                            <h2 class="mb-4" data-key="iletişimform"></h2>
+
+                            <form id="form" class="contact-form me-lg-5 pe-lg-3" role="form">
+
+                                <div class="form-floating">
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
+
+                                    <label for="name" data-key="iform1"></label>
+                                </div>
+
+                                <div class="form-floating my-4">
+                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+
+                                    <label for="email"data-key="iform2"></label>
+                                </div>
+                                
+                                <div class="form-floating my-4">
+                                    <input type="subject" name="subject" id="subject"class="form-control" placeholder="Subject" required>
+
+                                    <label for="subject"data-key="iform3"></label>
+                                </div>
+
+                                <div class="form-floating mb-4">
+                                    <textarea id="message" name="message" class="form-control" placeholder="Leave a comment here" required style="height: 160px"></textarea>
+
+                                    <label for="message"data-key="iform4"></label>
+                                </div>
+
+                                <div class="col-lg-5 col-6">
+                                    <button id="button1" type="submit" class="form-control" data-key="iform5"></button>
+                                </div>
+                            </form>
+                            <script type="text/javascript"
+                            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                          
+                          <script type="text/javascript">
+                            emailjs.init('kKgLbqBEpUsFEc6RA')
+                          </script>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-5 ms-auto">
+                            <div class="row">
+                                <div class="col-6 border-end contact-info"> 
+                                    <div class="custom-link">
+                                        <h5 class="mb-3"data-key="adres1"></h5>
+                                            Topselvi Mah.
+                                            Topselvi Cad. Dap Teras Kule No:95/97
+                                            <br>
+                                            Kartal, İSTANBUL
+                                    </div>
+                                    <br>
+                                    <div class="custom-link">
+                                        +90 216 222 04 54
+                                    </div>
+                                    <br>
+                                    <div class="text-wrap">
+                                        <a href="mailto:info@magmagrup.com.tr" >
+                                            <div class="badge bg-primary text-wrap" style="width: 10rem;">
+                                                info@magmagrup.com.tr
+                                            </div>
+                                            <i class="bi-arrow-right ms-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 contact-info">
+                                	<div class="custom-link">
+                                        <h5 class="mb-3"data-key="adres2"></h5>
+                                        Sanayi Mah. Kumru Sok.
+                                        Yavuz İş Merkezi No:8/2
+                                        <br>
+                                        İzmit, KOCAELİ
+                                    </div>
+                                    <br>
+                                    <div class="custom-link">
+                                        +90 216 222 04 54
+                                    </div>
+                                    <br>
+                                    <a href="mailto:info@magmagrup.com.tr" class="">
+                                        <div class="badge bg-primary text-wrap" style="width: 10rem;">
+                                            info@magmagrup.com.tr
+                                        </div>
+                                        <i class="bi-arrow-right ms-2"></i>
+                                    </a>
+                                </div>
+                                <div class="col-6 border-top border-end contact-info">
+                                    <div class="ratio ratio-1x1">
+                                        <iframe class="embed-responsive-item " src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96503.1166630783!2d29.218174!3d40.899904!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac4baccba8a9b%3A0x43fd679a340bfdec!2sTopselvi%2C%20Topselvi%20Cd.%20No%3A95%2C%2034873%20Kartal%2F%C4%B0stanbul%2C%20T%C3%BCrkiye!5e0!3m2!1str!2sus!4v1740836305674!5m2!1str!2sus"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-6 border-top contact-info ">
+                                    <div class="ratio ratio-1x1">
+                                        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96717.35164081967!2d29.978313!3d40.752847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb455d3207a743%3A0xe96b619cd7cd1022!2sSanayi%2C%20Kumru%20Sk.%20No%3A8%2C%2041040%20%C4%B0zmit%2FKocaeli%2C%20T%C3%BCrkiye!5e0!3m2!1str!2sus!4v1740836406939!5m2!1str!2sus"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer ">
+            <div class="container ">
+                    <div class="row justify-content-between" >
+                        <div class="col-md-4 col-12 text-center">
+                            <div class="col-12">
+                                <a href="index.html">
+                                    <img class="img-fluid" src="images/magma.png" width="240" height="120"  alt="logo">
+                                </a>
+                            </div>
+                            <p class="product-p mb-0 mt-3">MAGMA GRUP İÇ VE DIŞ TİCARET LTD. ŞTİ.</p>
+                            <p class="copyright-text text-muted mt-lg-5 mb-lg-0">Copyright © 2023  <strong>Magma Grup İç ve Dış Tic. Ltd. Şti.</strong>
+                            <span data-key="all-right"></span></p>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <ul >
+                                <li class="footer-menu-item"><a href="about.html" class="footer-menu-link" data-key="buton"></a></li>
+
+                                <li class="footer-menu-item"><a href="etik.html" class="footer-menu-link" data-key="etikilkelerimiz"></a></li>
+
+                                <li class="footer-menu-item"><a href="projects.html" class="footer-menu-link" data-key="navProjects"></a></li>
+
+                                <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link" data-key="navContact"></a></li>
+                                
+                                <li class="footer-menu-item"><a href="about.html#sertifika" class="footer-menu-link" data-key="sertifika"></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <ul >
+                                <li class="footer-menu-item"><a href="services.html" class="footer-menu-link" data-key="navServices"></a></li>
+
+                                <li class="footer-menu-item"><a href="electrical-contracting.html" class="footer-menu-link" data-key="elec-header-h"></a></li>
+
+                                <li class="footer-menu-item"><a href="renewable-energy.html" class="footer-menu-link" data-key="renew-header-h"></a></li>
+                                
+                                <li class="footer-menu-item"><a href="consultancy.html" class="footer-menu-link" data-key="proje&danışmanlık"></a></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/language.js"></script>
+        <script>
+            const btn = document.getElementById('button');
+    
+            document.getElementById('form')
+            .addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            const serviceID = 'service_4m92xtr';
+            const templateID = 'template_3yifjj5';
+            const preferredLanguage = localStorage.getItem('preferredLanguage') || 'tr';
+    
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    alert(translations[preferredLanguage]["successMessage"]);
+                document.getElementById('form').reset();
+                }, (err) => {
+                    alert(translations[preferredLanguage]["errorMessage"]);
+                });
+            });
+        </script>
+    </body>
+</html>

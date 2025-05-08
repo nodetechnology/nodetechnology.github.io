@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>MAGMA</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/gallery.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+
+        <link rel="stylesheet" href="css/language.css"/>
+
+        <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    </head>
+    
+    <body>
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+    
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                        <div class="col-lg-4">
+                            <a href="index.html">
+                                <img class="img-fluid" src="images/magma.png" width="240" height="120"  alt="logo">
+                            </a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse col-lg-8" id="navbarNav">
+                            <ul class="navbar-nav mt-lg-4"> 
+
+                                <li class="nav-item">
+                                    <a data-key="navHome" class="nav-link" href="index.html"></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a data-key="navAbout" class="nav-link" href="about.html"></a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a data-key="navServices" class="nav-link" href="services.html"></a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a data-key="navProjects" class="nav-link active" href="projects.html"></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a data-key="navContact" class="nav-link" href="contact.html"></a>
+                                </li>
+
+                                <li class="nav-item ms-lg-5 ">
+                                    <input type="checkbox" id="language-toggle">
+                                    <label id="button" for="language-toggle">
+                                        <div id="knob"></div>
+                                        <div id="language-text"></div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <header class="site-header section-padding d-flex justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-12">
+                            <h2 data-key="projects-akasya-header">
+                                <span  class="d-block text-dark"></span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <button class="ac-buton" onclick="togglePanel(event)"><a data-key="buton"></a></button>
+            <div class="hakkimizda-panel" id="hakkimizdaPanel" onclick="event.stopPropagation()">
+                <button class="kapat-btn" onclick="togglePanel(event)">X</button>
+                            <img src="images/magmagrup.png" alt="Firma Logosu" class="logo">
+                            <div class="icerik">
+                                
+                                <h4><a data-key="buton1"></a></h4>Magma Grup İç ve Dış Ticaret Limited Şirketi
+                                
+                                <h4><a data-key="buton2"></a></h4>Kartal V.D.
+                                
+                                <h4><a data-key="buton3"></a></h4>610 110 7114
+                                
+                                <h4><a data-key="buton4"></a></h4>213429-5
+
+                                <h4><a data-key="buton5"></a></h4>0610-1107-1140-0001<br><br>
+
+                                <h3><a data-key="buton6"></a></h3> Topselvi Mahallesi, Topselvi Caddesi, Dap Teras Kule 2, No:95/97, Kartal, İstanbul
+
+                                <h3><a data-key="buton7"></a></h3>Sanayi Mahallesi, Kumru Sokak, Yavuz İş Merkezi No:8/2, İzmit, Kocaeli
+
+                                <h3><a data-key="buton8"></a></h3>+90 (216) 345 222 04 54
+
+                                <h3><a data-key="buton9"></a></h3>info@magmagrup.com.tr</div>
+            </div>
+            <section class="product-detail">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-8 col-12 mt-lg-5 mt-3 ">
+                            <h3 data-key="projects-tcmb-h-1" class="mt-3"></h3>
+                            <p data-key="projects-akasya-p" class="large-paragraph"></p>
+                        </div>
+                        <div class="col-lg-4 col-12 ">
+                            <div class="card my-5" style="width: 18rem;">
+                                <div class="card-body">
+                                  <strong data-key="projects-tcmb-card-h1"></strong><p data-key="projects-akasya-card-p1-1"></p><p data-key="projects-akasya-card-p1-2"></p>
+                                  <strong data-key="projects-tcmb-card-h2"></strong><p data-key="projects-akasya-card-p2"></p>
+                                  <strong data-key="projects-akbati-card-h1"></strong><p data-key="projects-akasya-card-p3"></p>
+                                  <strong data-key="projects-tcmb-card-h3"></strong><p data-key="projects-akasya-card-p4"></p>
+                                  <strong data-key="projects-tcmb-card-h4"></strong><p data-key="projects-akasya-card-p5"></p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="related-product border-top">
+                <div class="container my-4">
+                    <h3 data-key="projects-photos-h" ></h3>
+                    <div class="row mt-4 ">
+                        <div class="col-md-3 mb-4">
+                            <a href="images/project/akasya/akasya-1.jpg" data-lightbox="gallery">
+                                <div class="ratio ratio-1x1" >
+                                    <img src="images/project/akasya/akasya-1.jpg" class="img-fluid rounded">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <a href="images/project/akasya/akasya-2.jpg" data-lightbox="gallery">
+                                <div class="ratio ratio-1x1" >
+                                    <img src="images/project/akasya/akasya-2.jpg" class="img-fluid rounded">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <a href="images/project/akasya/akasya-3.jpg" data-lightbox="gallery">
+                                <div class="ratio ratio-1x1" >
+                                    <img src="images/project/akasya/akasya-3.jpg" class="img-fluid rounded">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <a href="images/project/akasya/akasya-4.jpg" data-lightbox="gallery">
+                                <div class="ratio ratio-1x1" >
+                                    <img src="images/project/akasya/akasya-4.jpg" class="img-fluid rounded">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row mt-4 ">
+                        <div class="col-md-3 mb-4">
+                            <a href="images/project/akasya/akasya-5.jpg" data-lightbox="gallery">
+                                <div class="ratio ratio-1x1" >
+                                    <img src="images/project/akasya/akasya-5.jpg" class="img-fluid rounded">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer ">
+            <div class="container ">
+                    <div class="row justify-content-between" >
+                        <div class="col-md-4 col-12 text-center">
+                            <div class="col-12">
+                                <a href="index.html">
+                                    <img class="img-fluid" src="images/magma.png" width="240" height="120"  alt="logo">
+                                </a>
+                            </div>
+                            <p class="product-p mb-0 mt-3">MAGMA GRUP İÇ VE DIŞ TİCARET LTD. ŞTİ.</p>
+                            <p class="copyright-text text-muted mt-lg-5 mb-lg-0">Copyright © 2023  <strong>Magma Grup İç ve Dış Tic. Ltd. Şti.</strong>
+                            <span data-key="all-right"></span></p>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <ul >
+                                <li class="footer-menu-item"><a href="about.html" class="footer-menu-link" data-key="buton"></a></li>
+
+                                <li class="footer-menu-item"><a href="etik.html" class="footer-menu-link" data-key="etikilkelerimiz"></a></li>
+
+                                <li class="footer-menu-item"><a href="projects.html" class="footer-menu-link" data-key="navProjects"></a></li>
+
+                                <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link" data-key="navContact"></a></li>
+                                
+                                <li class="footer-menu-item"><a href="about.html#sertifika" class="footer-menu-link" data-key="sertifika"></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <ul >
+                                <li class="footer-menu-item"><a href="services.html" class="footer-menu-link" data-key="navServices"></a></li>
+
+                                <li class="footer-menu-item"><a href="electrical-contracting.html" class="footer-menu-link" data-key="elec-header-h"></a></li>
+
+                                <li class="footer-menu-item"><a href="renewable-energy.html" class="footer-menu-link" data-key="renew-header-h"></a></li>
+                                
+                                <li class="footer-menu-item"><a href="consultancy.html" class="footer-menu-link" data-key="proje&danışmanlık"></a></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/language.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+    </body>
+</html>
